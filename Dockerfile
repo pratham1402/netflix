@@ -7,7 +7,7 @@ FROM tomcat:9.0
 WORKDIR /usr/local/tomcat/webapps/myapp
 
 # Copy your application files into the Tomcat webapps directory
-COPY . .
+COPY /var/lib/jenkins/workspace/tomcat-pipeline/target/NETFLIX-1.2.2.war .
 
 # If you have additional configuration files, you can copy them too
 # COPY ./path/to/your/config-files/* /usr/local/tomcat/conf/
